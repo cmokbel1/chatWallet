@@ -63,7 +63,7 @@ a:hover {
   margin-bottom: 25px;
   padding: 10px;
   background: #fff;
-  height: 300px;
+  max-height: 600px;
   width: 530px;
   border: 1px solid #a7a7a7;
   border-radius: 4px;
