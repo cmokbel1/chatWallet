@@ -30,6 +30,7 @@ chat.addEventListener('submit', event => {
   }
 
   socket.emit('chatMessage', (usermsg))
+
   
   //clear input
 
@@ -51,6 +52,6 @@ function outputMessage(message) {
   div.classList.add('message');
   div.innerHTML =`<div style="background-color:darkblue; color:whitesmoke; border: 2px solid black;"><p class="meta" >${message.username} @ ${message.time.toLocaleString()}</p>
       <p class="text">${message.text}</p></div><br>`;
-      document.querySelector('.chatbox').appendChild(div)
+  box.appendChild(div)
 }
 
