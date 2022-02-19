@@ -1,7 +1,7 @@
 const User = require('./User.js')
-const Post = require('./Post.js')
+const Room = require('./room.js')
 
 User.hasMany(Post, { foreignKey: 'uid' })
-Post.belongsTo(User, { foreignKey: 'uid' })
+Room.belongsTo(User, { foreignKey: 'uid' })
 
-module.exports = { User, Post }
+module.exports = { User, Room }
